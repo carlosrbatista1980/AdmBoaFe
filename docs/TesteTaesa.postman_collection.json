@@ -1,0 +1,144 @@
+{
+	"info": {
+		"_postman_id": "88c3b14e-e1cc-4b29-b598-a3c3489fc309",
+		"name": "TesteTaesa",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13435868"
+	},
+	"item": [
+		{
+			"name": "CadastrarPessoaUnidade",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nome\": \"Tarcicio souza da silva\",\r\n  \"telefone\": \"978559980\",\r\n  \"cpf\": \"04865235798\",  \r\n  \"condominioCnpj\": \"68308198000109\",\r\n  \"numeroUnidade\": 402\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5000/Boafe/CadastrarPessoaUnidade",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"Boafe",
+						"CadastrarPessoaUnidade"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EditarPessoa",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nome\": \"Tarcicio dos santos pereira\",\r\n  \"telefone\": \"966666666\",\r\n  \"cpf\": \"04865235798\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5000/Boafe/EditarPessoa",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"Boafe",
+						"EditarPessoa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeletarPessoa",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "https://localhost:5000/Boafe/DeletarPessoa?cpf=04865235798",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"Boafe",
+						"DeletarPessoa"
+					],
+					"query": [
+						{
+							"key": "cpf",
+							"value": "04865235798"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllCondominios",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5000/Boafe/GetAllCondominios",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"Boafe",
+						"GetAllCondominios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetCondominioById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5000/Boafe/GetCondominioById?id=2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"Boafe",
+						"GetCondominioById"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
